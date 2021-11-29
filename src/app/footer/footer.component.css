@@ -1,0 +1,15 @@
+footer,.mat-toolbar{
+    background-color: #0B4619;
+
+}
+
+.mat-card.logo {
+    background-color: #0B4619;
+    border-radius: 0;
+    box-shadow: none;
+} 
+
+.mat-card-content.second-footer {
+    background-color: #116530;
+} 
+

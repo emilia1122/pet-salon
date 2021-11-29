@@ -1,0 +1,6 @@
+.navigation-responsive, .mat-drawer-content {
+  background-color: #0B4619;
+}
+.active {
+  background-color: #FFCC1D;
+}

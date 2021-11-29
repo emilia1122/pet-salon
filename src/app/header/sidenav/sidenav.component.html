@@ -1,0 +1,15 @@
+<mat-sidenav-container autosize >
+  <mat-sidenav #sidenav [fixedInViewport]="true" mode="side" position="start" class="navigation-responsive" (click)="sidenav.toggle()">
+    <mat-list *ngFor="let navItem of navItems" class="d-flex justify-content-center">
+      <button mat-button [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="text-light fs-5">
+        {{navItem.name}}
+      </button>
+     </mat-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <app-top-nav></app-top-nav>
+    <button mat-button>
+      <mat-icon (click)="sidenav.toggle()" class="text-light">menu</mat-icon>
+     </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,11 @@
+<mat-toolbar>
+  <app-top-nav></app-top-nav>
+  <mat-toolbar-row class="navigation-row d-flex justify-content-center">
+    <span *ngFor="let navItem of navItems">
+        <button mat-button [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="text-light fs-5">
+          {{navItem.name}}
+        </button>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
